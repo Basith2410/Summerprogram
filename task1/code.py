@@ -2,7 +2,7 @@ import numpy
 import pandas
 import joblib
 
-data = pandas.read_csv('SalaryData.csv')
+data = pandas.read_csv('salarysheet.csv')
 X=data['YearsExperience'].values.reshape(-1,1)
 y=data['Salary']
 from sklearn.linear_model import LinearRegression
